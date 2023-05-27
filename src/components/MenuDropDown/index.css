@@ -1,0 +1,25 @@
+.list {
+  @apply list-none w-[600px] m-auto;
+}
+
+.list-item {
+  @apply float-left w-[120px] text-center h-[40px] bg-slate-500 shadow-md hover:bg-slate-800 relative;
+}
+
+.list-item ul {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  display: none;
+}
+
+.list-item ul ul {
+  margin-left: 120px;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.list-item:hover ul {
+  display: block;
+}

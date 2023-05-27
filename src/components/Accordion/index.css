@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion {
+  width: 800px;
+  margin: auto;
+  height: 320px;
+  overflow: hidden;
+}
+
+.accordion li {
+  width: 160px;
+  display: block;
+  position: relative;
+  float: left;
+  transition: all 0.5s;
+}
+
+.title {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 640px;
+}
+
+.title a {
+  display: block;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.accordion ul:hover li {
+  width: 40px;
+}
+
+.accordion ul li:hover {
+  width: 640px;
+}
